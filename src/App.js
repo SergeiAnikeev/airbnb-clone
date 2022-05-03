@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from "./components/Hero"
 import Card from "./components/Card"
+import photo from './images/katie-zaferes.png';
 import './App.css';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Navbar/>
       <Hero />
       <Card 
-        img="katie-zaferes.png"
+        img={photo}
         rating={5.0}
         reviewCount={6}
         country="USA"
