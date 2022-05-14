@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from "./components/Hero"
 import Card from "./components/Card"
-import photo from './images/katie-zaferes.png';
+//import photo from './images/katie-zaferes.png';
 import './App.css';
 import data from './data';
 
@@ -18,6 +18,7 @@ function App() {
               location={item.location}
               title={item.title}
               price={item.price}
+              openSpots={item.openSpots}
           />
         )
       }
@@ -28,8 +29,8 @@ function App() {
       <Navbar/>
       <Hero />
       <section className="cards-list">
-                {cards}
-            </section>
+        {cards}
+      </section>
     </div>
   )
 }
